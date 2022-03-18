@@ -1,0 +1,54 @@
+.nav_item {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 1rem;
+    margin-bottom: 40px;
+}
+
+.nav_item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFFFFF;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.nav_item:hover::before {
+    width: 26px;
+}
+
+.active {
+    color: var(--color-orange);
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.active:hover {
+    color: #FFFFFF;
+}
+
+.active:hover::before {
+    background-color: #FFFFFF;
+}
+
+.active::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 26px;
+    height: 2px;
+    background-color: var(--color-orange);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}

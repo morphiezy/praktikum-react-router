@@ -1,0 +1,35 @@
+.container-not-match{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-not-match > .illustration{
+    margin-bottom: 1.75rem;
+    width: 200px;
+}
+
+.container-not-match > .title{
+    color:#FFFFFF;
+    font-size:2.25rem;
+    margin-bottom:1.875rem ;
+}
+
+.container-not-match > .subtitle{
+    color:#FFFFFF;
+    font-size: 1.25rem;
+}
+
+.btn-navigate{
+    background-color: #9E66FA;
+    color:#FFFFFF;
+    font-family: var(--font);
+    font-size: 0.687rem;
+    padding: 2em 2.5em;
+    border: none;
+    border-radius: 5px;
+    margin-top: 6.25rem;
+    cursor: pointer;
+}

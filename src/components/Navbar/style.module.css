@@ -1,0 +1,43 @@
+.container {
+    width: 300px;
+    padding: 0 45px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #13125B;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+    z-index: 99;
+}
+
+
+.close_btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    border: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+    color: #FFFFFF;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.list_container {
+    margin-top: 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+
+@media screen and (max-width:576px) {
+    .container{
+        width: 100%;
+        max-width: 300px;
+    }
+}

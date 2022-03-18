@@ -1,0 +1,145 @@
+.todo_item {
+    margin-bottom:1.875rem;
+    padding: 1.56rem;
+    background-color: #6698FA;
+    color: #FFFFFF;
+    border-radius: 10px;
+    -webkit-animation: falldown 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -webkit-animation: falldown 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    animation: falldown 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.todo_item:last-of-type {
+    margin-bottom: 0;
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle_complete {
+    display: none;
+}
+
+.toggle_checkbox {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin-right: 25px;
+    border: 3px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.toggle_checkbox::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    -webkit-transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    -o-transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition: 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.toggle_complete:checked~.toggle_checkbox::before {
+    width: 19px;
+    height: 19px;
+    opacity: 1;
+}
+
+.todo_info {
+    max-width: 450px;
+    margin-top: 7px;
+    overflow: hidden;
+}
+
+.title,
+.subtitle {
+    display: block;
+}
+
+.title {
+    display: block;
+    overflow: hidden;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.subtitle {
+    font-size: 0.75rem;
+}
+
+.toggle_complete:checked~.todo_info>.title {
+    text-decoration: line-through;
+}
+
+.todo_tools {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.btn_edit,
+.btn_delete {
+    font-family: var(--font);
+    font-size: 0.625rem;
+    color: #000;
+    text-transform: uppercase;
+    background-color: #FFFFFF;
+    border: 1px dashed #6698FA;
+    padding: 10px 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+
+
+/* Animation */
+
+@-webkit-keyframes falldown {
+    from {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes falldown {
+    from {
+        -webkit-transform: translateY(-50px);
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}

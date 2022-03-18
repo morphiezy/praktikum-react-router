@@ -1,38 +1,109 @@
 .App {
-  text-align: center;
+    position: relative;
+    height: 100%;
+    /* padding: 0 7.5rem; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+    position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-toggle-nav{
+    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    padding-top: 2px;
+    border: 2px solid rgba(255,255,255,.1);
+    border-radius: 50%;
+    color:#FFFFFF;
+    cursor: pointer;
+    position: fixed;
+    top: 58px;
+    left: 30px;
+    transition: 0.3s;
+    z-index: 2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-toggle-nav:hover{
+    background-color: #13125B;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-toggle-nav > .icon{
+    font-size: 2.18rem;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-content {
+    width: 600px;
+    height: 100%;
+    
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    margin: auto;
+    padding: 5rem 0;
+}
+
+
+
+
+@media screen and (max-width:800px) {
+
+    html{
+        font-size: 15px;
+    }
+    
+    .main-content{
+        width: 500px;
+        padding: 4rem 0 ;
+    }
+
+    .btn-toggle-nav{
+        width: 55px;
+        height: 55px;
+        left: 20px;
+        top: 45px;
+    }
+
+}
+
+
+@media screen and (max-width:700px) {
+    .main-content{
+        width: 400px;
+        padding: 4rem 0;
+    }
+}
+
+
+@media screen and (max-width:576px) {
+    html{
+        font-size: 13px;
+    }
+
+    .App{
+        padding: 0 2rem;
+    }
+
+    .main-content{
+        width: 100%;
+        padding: 7rem 0 4rem;
+    }
+
+    .btn-toggle-nav{
+        position: fixed;
+        width: 55px;
+        height: 55px;
+        top: 0px;
+        left: 0px;
+        border-radius: 0;
+        border: none;
+        background-color: #13125B;
+    }
 }

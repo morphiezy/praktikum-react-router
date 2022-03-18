@@ -1,0 +1,135 @@
+/* Input todo */
+
+.todo_header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.todo_input{
+    width: 450px;
+    height: 55px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+    background-color: #13125B;
+    color:#FFFFFF;
+    padding: 0 30px;
+    font-family: var(--font);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.todo_input:focus{
+    background-color: #9E66FA;
+    -webkit-animation: glitch 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation: glitch 0.8s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+
+/* Placeholder input */
+
+.todo_input::-webkit-input-placeholder{
+    color:#FFFFFF;
+}
+
+.todo_input::-moz-placeholder{
+    color:#FFFFFF;
+}
+
+.todo_input:-ms-input-placeholder{
+    color:#FFFFFF;
+}
+
+.todo_input::-ms-input-placeholder{
+    color:#FFFFFF;
+}
+
+.todo_input::placeholder{
+    color:#FFFFFF;
+}
+
+
+/* Add button  */
+
+
+.btn_add{
+    display: none;
+}
+
+.toggle_add{
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background-color: #9E66FA;
+    color:#FFFFFF;
+    border: none;
+    font-size: 20px;
+    font-family: var(--font);
+    cursor: pointer;
+}
+
+
+/* Animation Form input  */
+
+
+@-webkit-keyframes glitch {
+    10% {background-color: #9E66FA;}
+    20% {background-color:#9E66FA;}
+    30% {background-color:#100F4E;}
+    40% {background-color:#100F4E;}
+    50% {background-color:#100F4E;}
+    60% {background-color: #9E66FA;}
+    65% {background-color: #100F4E;}
+    70% {background-color: #9E66FA;}
+    75% {background-color: #100F4E;}
+    80% {background-color: #100F4E;}
+    85% {background-color: #100F4E;}
+    90% {background-color: #100F4E;}
+    95% {background-color: #100F4E;}
+    100% {background-color: #9E66FA;}
+}
+
+
+@keyframes glitch {
+    10% {background-color: #9E66FA;}
+    20% {background-color:#9E66FA;}
+    30% {background-color:#9E66FA;}
+    40% {background-color:#9E66FA;}
+    50% {background-color:#9E66FA;}
+    60% {background-color: #9E66FA;}
+    65% {background-color: #100F4E;}
+    70% {background-color: #9E66FA;}
+    75% {background-color: #9E66FA;}
+    80% {background-color: #100F4E;}
+    85% {background-color: #100F4E;}
+    90% {background-color: #100F4E;}
+    95% {background-color: #100F4E;}
+    100% {background-color: #9E66FA;}
+}
+
+
+@media screen and (max-width:800px) {
+    .todo_input{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:576px){
+    .todo_input{
+        height: 50px;
+        font-size: 0.9rem;
+    }
+
+    .toggle_add{
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
+}
