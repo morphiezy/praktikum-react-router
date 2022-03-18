@@ -20,6 +20,8 @@
 .container-not-match > .subtitle{
     color:#FFFFFF;
     font-size: 1.25rem;
+    text-align: center;
+    line-height: 2.5rem;
 }
 
 .btn-navigate{
@@ -32,4 +34,11 @@
     border-radius: 5px;
     margin-top: 6.25rem;
     cursor: pointer;
+}
+
+
+@media screen and (max-width:576px){
+    .container-not-match > .illustration{
+        width: 170px;
+    }
 }

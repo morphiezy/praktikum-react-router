@@ -8,6 +8,7 @@ const AboutApp = ()=>{
         <div className={about_header}>
             <h1 className={title}>About App</h1>
             <p className={subtitle}>REACT-TODO is an application that makes it easy for you to make a list of activities that you will do in the future, this application has several features where you can edit, add and delete your activity list</p>
+            <p className={subtitle}>If you want to edit todo , press edit then on the input form please edit the text then press enter to save.</p>
         </div>
     )
 }

@@ -74,7 +74,7 @@ const Home = ()=>{
             <Link to="/">
                 <h1 className="brand-link">
                     <span className="gt-symbol">&gt;</span>
-                    react-router
+                    react-todo
                 </h1>
             </Link>
             <div className="todo_app">
