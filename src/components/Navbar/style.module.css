@@ -1,6 +1,10 @@
+header{
+    position: relative;
+}
+
 .container {
     width: 300px;
-    padding: 0 45px;
+    padding: 0 2.81rem;
     position: fixed;
     left: 0;
     top: 0;
@@ -35,9 +39,57 @@
 }
 
 
+.btn_toggle_nav{
+    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    padding-top: 2px;
+    border: 2px solid rgba(255,255,255,.1);
+    border-radius: 50%;
+    color:#FFFFFF;
+    cursor: pointer;
+    position: fixed;
+    top: 58px;
+    left: 30px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.btn_toggle_nav:hover{
+    background-color: #13125B;
+}
+
+.btn_toggle_nav > .icon{
+    font-size: 2.18rem;
+    
+}
+
+
+
+@media screen and (max-width:800px) {
+    .btn_toggle_nav{
+        width: 55px;
+        height: 55px;
+        left: 20px;
+        top: 45px;
+    }
+}
+
+
 @media screen and (max-width:576px) {
     .container{
-        width: 100%;
-        max-width: 300px;
+        max-width: 70%;
+        padding: 0 2.18rem;
+    }
+
+    .btn_toggle_nav{
+        position: fixed;
+        width: 55px;
+        height: 55px;
+        top: 0px;
+        left: 0px;
+        border-radius: 0;
+        border: none;
+        background-color: #13125B;
     }
 }

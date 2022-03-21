@@ -1,36 +1,6 @@
 .App {
     position: relative;
     height: 100%;
-    /* padding: 0 7.5rem; */
-}
-
-header{
-    position: relative;
-}
-
-.btn-toggle-nav{
-    background-color: transparent;
-    width: 70px;
-    height: 70px;
-    padding-top: 2px;
-    border: 2px solid rgba(255,255,255,.1);
-    border-radius: 50%;
-    color:#FFFFFF;
-    cursor: pointer;
-    position: fixed;
-    top: 58px;
-    left: 30px;
-    transition: 0.3s;
-    z-index: 2;
-}
-
-.btn-toggle-nav:hover{
-    background-color: #13125B;
-}
-
-.btn-toggle-nav > .icon{
-    font-size: 2.18rem;
-    
 }
 
 .main-content {
@@ -64,13 +34,6 @@ header{
         padding: 4rem 0 ;
     }
 
-    .btn-toggle-nav{
-        width: 55px;
-        height: 55px;
-        left: 20px;
-        top: 45px;
-    }
-
 }
 
 
@@ -88,22 +51,11 @@ header{
     }
 
     .App{
-        padding: 0 2rem;
+        padding: 0 2.5rem;
     }
 
     .main-content{
         width: 100%;
         padding: 7rem 0 4rem;
-    }
-
-    .btn-toggle-nav{
-        position: fixed;
-        width: 55px;
-        height: 55px;
-        top: 0px;
-        left: 0px;
-        border-radius: 0;
-        border: none;
-        background-color: #13125B;
     }
 }

@@ -60,25 +60,40 @@
     opacity: 1;
 }
 
-.todo_info {
-    max-width: 450px;
-    margin-top: 7px;
+.todo_info {    
+    width: 80%;
     overflow: hidden;
 }
 
 .title,
 .subtitle {
     display: block;
+    width: 100%;
 }
 
 .title {
     display: block;
     overflow: hidden;
+    background-color: transparent;
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     white-space: nowrap;
+    color:#FFFFFF;
     font-size: 1rem;
+    font-family: var(--font);
     margin-bottom: 20px;
+    padding: 0.625rem 0;
+    border: none;
+    transition: 0.3s;
+}
+
+.title:disabled{
+    color:#FFFFFF;
+}
+
+.title:focus{
+    padding: 0.625rem;
+    background-color: rgba(255,255,255,.2);
 }
 
 .subtitle {
@@ -142,4 +157,24 @@
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+
+@media screen and (max-width:576px) {
+    
+    .toggle_checkbox{
+        width: 25px;
+        height: 25px;
+    }
+
+    .toggle_complete:checked~.toggle_checkbox::before {
+        width: 15px;
+        height: 15px;
+        opacity: 1;
+    }
+
+    .title{
+        width: 90%;
+    }
+
 }

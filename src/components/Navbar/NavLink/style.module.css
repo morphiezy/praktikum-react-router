@@ -2,7 +2,8 @@
     position: relative;
     color: #FFFFFF;
     font-size: 1rem;
-    margin-bottom: 40px;
+    line-height:2rem;
+    margin-bottom: 2.5rem;
 }
 
 .nav_item::before {
